@@ -1,0 +1,96 @@
+<!--DJ simulation
+
+This program allows the user to be a one man band. It comes with a keyboard, drumset,
+a record, a microphone, and a playback function
+
+Made by Franklin Chen and Kevin Chen
+-->
+<!DOCTYPE html>
+<script src=".js"></script>
+<link rel="stylesheet" type="text/css" href="frame.css">
+<html>
+<H1>
+  BASIC DJ
+</H1>
+<H2 class=index><a id = help href="help.html"> Help <a></H2> 
+<body>
+<head> 
+  <hr>
+  <BR>  
+    <BR>  
+  <div class="right">
+  <H3 class = pianoSlider> Piano Volume</H3>
+  <input type="range" min="1" max="100" value="50" id="pianoSlider">
+</div>
+<div class = center> 
+  <!--
+  This creates the keys for the piano, and runs the play function when clicked
+  -->
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_B_Flat_1" onclick="play_B_Flat_1();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_B_1" onclick="play_B_1();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_C" onclick="play_C();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_C_Sharp" onclick="play_C_Sharp();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_D" onclick="play_D();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_D_Sharp" onclick="play_D_Sharp();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_E" onclick="play_E();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_F" onclick="play_F();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_F_Sharp" onclick="play_F_Sharp();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_G" onclick="play_G();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_G_Sharp" onclick="play_G_Sharp();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_A" onclick="play_A();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_A_Sharp" onclick="play_A_Sharp();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_B" onclick="play_B();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_C_2" onclick="play_C_2();"/>
+<img src="Black.png" width="50" height="160" largewidth="480" largeheight="360" id="play_C_Sharp_2" onclick="play_C_Sharp_2();"/>
+<img src="White.png" width="50" height="160" largewidth="480" largeheight="360" id="play_D_2" onclick="play_D_2();"/>
+  </div>
+  
+  
+<BR><BR>
+  <BR><BR><BR><BR>  
+
+      <div class="right">
+      <H3 class = percussionSlider> Percussion Volume</H3>
+  <input type="range" min="1" max="100" value="50" id="percussionSlider">
+</div>
+<div class = center>
+  <!--
+  This uploads the percussion images and runs the play function when clicked
+  -->
+<img src="Big_Drum.png" width="150" height="150" largewidth="480" largeheight="360" id="play_Big_Tom" onclick="play_Big_Tom();"/>
+<img src="Medium_Drum.png" height="150" largewidth="480" largeheight="360" id="play_Medium_Tom" onclick="play_Medium_Tom();"/>
+<img src="Small_Drum.png" height="150" largewidth="480" largeheight="360" id="play_Small_Tom" onclick="play_Small_Tom();"/>
+<img src="Hi_Hat.png" height="150" largewidth="480" largeheight="360" id="play_Hi_Hat" onclick="play_Hi_Hat();"/>
+<img src="Hi_Hat_2.jpg" height="150" largewidth="480" largeheight="360" id="play_Hi_Hat_2" onclick="play_Hi_Hat_2();"/>
+<img src="Snare.jpg" height="150" largewidth="480" largeheight="360" id="play_Snare" onclick="play_Snare();"/>
+<img src="Bass.jpg" height="150" largewidth="480" largeheight="360" id="play_Bass" onclick="play_Bass();"/>
+<img src="Tamb.jpg" height="150" largewidth="480" largeheight="360" id="play_Tamb" onclick="play_Tamb();"/>
+  
+  </div>
+    
+    <BR><BR><BR><BR>  
+<div class = center>
+  <!--
+  Buttons to bind an instument to a key
+  -->
+<button onclick="Binding_7()">Big Tom Binding</button>
+<button onclick="Binding_6()">Medium Tom Binding</button>
+<button onclick="Binding_5()">Small Tom Binding</button>
+<button onclick="Binding_3()">High Hat Binding</button>
+<button onclick="Binding_4()">High Hat Two Binding</button>
+<button onclick="Binding_1()">Snare Binding</button>
+<button onclick="Binding_2()">Bass Binding</button>
+<button onclick="Binding_8()">Tambourine Binding</button>
+      </div>
+  <BR><BR><BR><BR>  
+    <div class = center>
+ <button Onclick = "record();">Record</button>
+  <button Onclick ="play1();">Play Back</button> 
+  <audio id=recordedAudio></audio>
+  <button Onclick ="recordMic();">Record Microphone</button> 
+  <button Onclick ="stopMic();">Stop Recording Microphone</button> 
+  <button Onclick ="playMicrophone();">Play Microphone Audio</button> 
+    </div>
+
+</body>
+</html>

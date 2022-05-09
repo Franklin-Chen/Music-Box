@@ -1,0 +1,36 @@
+body {
+  background-color:#FC5555;
+}
+H1 {
+  text-align:center;
+  font: bold 80px Comic Sans MS, serif;
+}
+.center {
+  text-align:center;
+}
+.bottem {
+
+  position: relative;
+  text-align:center;
+  bottom: -300px;
+}
+
+.right {
+  text-align:right;
+  position: relative;
+  right:250px
+}
+
+.pianoSlider {
+  font: 20px Comic Sans MS, serif;
+}
+
+.percussionSlider {
+  font: 20px Comic Sans MS, serif;
+}
+
+#help {
+  position: relative;
+  font: 50px Arial, serif;
+  right:-100px
+}

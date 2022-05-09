@@ -1,0 +1,23 @@
+body {
+  background-color:#FC5555;
+}
+
+H1 {
+  text-align:center;
+  font: bold 80px Arial, serif;
+}
+
+H3 {
+  text-align:right;
+  position: relative;
+  right:100px;
+  font: 50px Comic Sans MS, serif;
+}
+
+H2 {
+  font: 40px Arial, serif;
+}
+
+p {
+  font: 20px Arial, serif;
+}
